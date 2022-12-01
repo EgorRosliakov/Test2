@@ -32,6 +32,20 @@
 
 }
 
+.modal-table__icon {
+        position: absolute;
+            top: 16px;
+            right: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #fff;
+            cursor: pointer;
+}
+
 .modal-table__title {
     margin-bottom: 40px;
     font-family: 'Times New Roman', serif;
