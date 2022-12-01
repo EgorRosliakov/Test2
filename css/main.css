@@ -609,14 +609,19 @@ img {
   position: absolute;
   display: block;
   width: 414px;
-  height: 668px;
   left: 50%;
   top: 0px;
   padding: 60px 15px;
   -webkit-transform: translate(-50%) scale(1);
           transform: translate(-50%) scale(1);
-  background-color: #FFFDEE;
+  background-color: #fffdee;
   border-radius: 2px;
+}
+@media screen and (min-width: 1024px) {
+  .modal-table {
+    width: 712px;
+    height: 522px;
+  }
 }
 
 .modal-table__icon {
@@ -651,6 +656,11 @@ img {
   text-transform: uppercase;
   text-align: center;
 }
+@media screen and (min-width: 1024px) {
+  .modal-table__title {
+    font-size: 40px;
+  }
+}
 
 .modal-table__form {
   display: -webkit-box;
@@ -677,31 +687,55 @@ img {
   width: 384px;
   height: 54px;
   margin-bottom: 8px;
-  border: 1px solid #C79002;
+  border: 1px solid #c79002;
   font-family: "Times New Roman";
   font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.167;
-  letter-spacing: 0.05em;
-  color: #808080;
-  outline: none;
-}
-
-.modal-table__label {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.05em;
   color: #808080;
+  outline: none;
+}
+@media screen and (min-width: 1024px) {
+  .modal-table__input {
+    width: 288px;
+    height: 64px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.modal-table__label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: #C79002;
+}
+@media screen and (min-width: 1024px) {
+  .modal-table__label {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .modal-table__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 384px;
-  padding: 20px 64px;
-  border: 1px solid #F3C653;
+  height: 64px;
+  padding: 18px;
+  border: 1px solid #f3c653;
   border-radius: 2px;
   font-family: inherit;
   font-weight: 500;
@@ -710,7 +744,16 @@ img {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   cursor: pointer;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-table__button:hover, .modal-table__button:focus {
-  background-color: #FFFFFF;
+  background-color: #F3C653;
+  color: #000000;
+}
+@media screen and (min-width: 1024px) {
+  .modal-table__button {
+    width: 592px;
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=main.css.map */
