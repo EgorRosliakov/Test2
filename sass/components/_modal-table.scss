@@ -1,0 +1,104 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: ;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: scroll;
+
+    &.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.modal-table {
+    position: absolute;
+    display: block;
+    width: 414px;
+        height: 668px;
+        left: 50%;
+            top: 0px;
+    padding: 60px 15px;
+    transform: translate(-50%) scale(1);
+    background-color: #FFFDEE;
+    border-radius: 2px;
+
+}
+
+.modal-table__title {
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.modal-table__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-table__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.modal-table__input {
+    width: 384px;
+    height: 54px;
+    margin-bottom: 8px;
+    border: 1px solid #C79002;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.05em;
+    color: #808080;
+    outline: none;
+}
+
+.modal-table__label {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: #808080;
+}
+
+.modal-table__button {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 384px;
+    padding: 20px 64px;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    cursor: pointer;
+    // transition 
+
+    &:hover,
+    &:focus {
+        background-color: #FFFFFF;
+    }
+}

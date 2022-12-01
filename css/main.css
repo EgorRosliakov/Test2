@@ -1,0 +1,696 @@
+@font-face {
+  font-family: "Film P3";
+  src: url("FilmP3Bold.eot");
+  src: local("Film P3 Bold"), local("FilmP3Bold"), url("../fonts/FilmP3Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FilmP3Bold.woff2") format("woff2"), url("../fonts/FilmP3Bold.woff") format("woff"), url("../fonts/FilmP3Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-500.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-600.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-600.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-700.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 85px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.hero-main-background {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-main_414.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-main_414.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-main-background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-main_414x2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-main_414x2.jpg);
+  }
+}
+@media screen and (min-width: 415px) {
+  .hero-main-background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-main_1024.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-main_1024.jpg);
+  }
+}
+@media screen and (min-width: 415px) and (min-device-pixel-ratio: 2), screen and (min-width: 415px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 415px) and (min-resolution: 192dpi), screen and (min-width: 415px) and (min-resolution: 2dppx) {
+  .hero-main-background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-main_1024x2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-main_1024x2.jpg);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .hero-main-background {
+    max-width: 1280px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-main_1280.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-main_1280.jpg);
+  }
+}
+@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
+  .hero-main-background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-main_1280x2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-main_1280x2.jpg);
+  }
+}
+
+.hero-restaurant-background {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-restaurant_414.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-restaurant_414.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-restaurant-background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-restaurant_414x2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-restaurant_414x2.jpg);
+  }
+}
+@media screen and (min-width: 415px) {
+  .hero-restaurant-background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-restaurant_1024.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-restaurant_1024.jpg);
+  }
+}
+@media screen and (min-width: 415px) and (min-device-pixel-ratio: 2), screen and (min-width: 415px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 415px) and (min-resolution: 192dpi), screen and (min-width: 415px) and (min-resolution: 2dppx) {
+  .hero-restaurant-background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-restaurant_1024x2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-restaurant_1024x2.jpg);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .hero-restaurant-background {
+    max-width: 1280px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-restaurant_1280.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-restaurant_1280.jpg);
+  }
+}
+@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
+  .hero-restaurant-background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-restaurant_1280x2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-restaurant_1280x2.jpg);
+  }
+}
+
+.hero-hotel-background {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-hotel_414.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-hotel_414.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-hotel-background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-hotel_414x2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-hotel_414x2.jpg);
+  }
+}
+@media screen and (min-width: 415px) {
+  .hero-hotel-background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-hotel_1024.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-hotel_1024.jpg);
+  }
+}
+@media screen and (min-width: 415px) and (min-device-pixel-ratio: 2), screen and (min-width: 415px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 415px) and (min-resolution: 192dpi), screen and (min-width: 415px) and (min-resolution: 2dppx) {
+  .hero-hotel-background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-hotel_1024x2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-hotel_1024x2.jpg);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .hero-hotel-background {
+    max-width: 1280px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-hotel_1280.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-hotel_1280.jpg);
+  }
+}
+@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
+  .hero-hotel-background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/hero-hotel_1280x2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero-hotel_1280x2.jpg);
+  }
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+  font-family: "Film P3", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.0755555556;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .logo {
+    font-size: 40px;
+    line-height: 1.07575;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .logo {
+    margin-right: 86px;
+  }
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 359px) {
+  .header-nav {
+    width: 140px;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.header-nav__item:nth-child(odd) {
+  margin-right: 6px;
+}
+@media screen and (min-width: 1024px) {
+  .header-nav__item:nth-child(odd) {
+    margin-right: 32px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .header-nav__item:nth-child(2) {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header-nav__item:nth-child(2) {
+    margin-right: 72px;
+  }
+}
+
+.header-nav__link {
+  display: block;
+  padding: 28px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.21875;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+}
+@media screen and (min-width: 1024px) {
+  .header-nav__link {
+    padding: 38px 0;
+    font-size: 20px;
+    line-height: 1.219;
+    letter-spacing: 0.02em;
+  }
+}
+
+.header-nav__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .header-nav__contact {
+    padding: 7px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2192857143;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+}
+
+.header-nav__contact-icon {
+  width: 24px;
+  height: 24px;
+  fill: rgba(243, 198, 83, 0.7);
+}
+@media screen and (min-width: 1024px) {
+  .header-nav__contact-icon {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header-nav__tel {
+    display: none;
+  }
+}
+.header-nav__tel--margin-right {
+  margin-right: 16px;
+}
+
+.soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+@media screen and (min-width: 1280px) {
+  .soc {
+    position: absolute;
+    top: -126px;
+    right: 85px;
+  }
+}
+.soc__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.soc__icon {
+  width: 24px;
+  height: 24px;
+  fill: rgba(243, 198, 83, 0.7);
+}
+
+.hero {
+  padding: 105px 0 20px 0;
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding: 88px 0 15px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding: 64px 0;
+  }
+}
+
+.hero__title {
+  margin: 0 auto;
+  width: 260px;
+  margin-bottom: 24px;
+  font-family: "Film P3", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1.0757291667;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 414px) {
+  .hero__title {
+    width: 303px;
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero__title {
+    font-size: 128px;
+    width: 404px;
+    margin-bottom: 16px;
+  }
+  .hero__title--hotel {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    margin-bottom: 32px;
+  }
+}
+
+.hero__sub-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.21875;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.hero__sub-title--hotel {
+  margin-bottom: 178px;
+}
+@media screen and (min-width: 1024px) {
+  .hero__sub-title {
+    margin-bottom: 56px;
+    font-size: 20px;
+    line-height: 1.219;
+  }
+  .hero__sub-title--hotel {
+    margin-bottom: 218px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__sub-title {
+    margin-bottom: 64px;
+  }
+  .hero__sub-title--hotel {
+    margin-bottom: 242px;
+  }
+}
+
+.hero__text {
+  text-align: center;
+  font-family: "Times New Roman", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 113px;
+}
+@media screen and (min-width: 1024px) {
+  .hero__text {
+    font-size: 36px;
+    line-height: 1.15;
+    margin-bottom: 137px;
+  }
+}
+
+.hero-elements-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 1023px) {
+  .hero-elements-position {
+    gap: 24px;
+    margin-bottom: 58px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero-elements-position {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .hero-elements-position {
+    margin-bottom: 25px;
+  }
+}
+
+.hero__map-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2191666667;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+}
+@media screen and (max-width: 1023px) {
+  .hero__map-location {
+    position: absolute;
+    top: -121px;
+    right: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero__map-location {
+    font-size: 16px;
+    line-height: 1.21875;
+  }
+}
+
+.hero__map-location-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  fill: rgba(243, 198, 83, 0.7);
+}
+@media screen and (min-width: 1024px) {
+  .hero__map-location-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.reservation-button {
+  padding: 12px 22px;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.21875;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+}
+.reservation-button:hover, .reservation-button:focus {
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .reservation-button--margin-right {
+    margin-right: 40px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: scroll;
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-table {
+  position: absolute;
+  display: block;
+  width: 414px;
+  height: 668px;
+  left: 50%;
+  top: 0px;
+  padding: 60px 15px;
+  -webkit-transform: translate(-50%) scale(1);
+          transform: translate(-50%) scale(1);
+  background-color: #FFFDEE;
+  border-radius: 2px;
+}
+
+.modal-table__title {
+  margin-bottom: 40px;
+  font-family: "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal-table__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-table__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.modal-table__input {
+  width: 384px;
+  height: 54px;
+  margin-bottom: 8px;
+  border: 1px solid #C79002;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  color: #808080;
+  outline: none;
+}
+
+.modal-table__label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: #808080;
+}
+
+.modal-table__button {
+  background-color: #000000;
+  color: #FFFFFF;
+  width: 384px;
+  padding: 20px 64px;
+  border: 1px solid #F3C653;
+  border-radius: 2px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.modal-table__button:hover, .modal-table__button:focus {
+  background-color: #FFFFFF;
+}/*# sourceMappingURL=main.css.map */

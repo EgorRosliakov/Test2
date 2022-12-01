@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mimino</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="hero-main-background">
+        <header>
+          <div class="container">
+            <div class="header-container">
+              <a href="./index.html" class="logo">mimiho</a>
+              <ul class="header-nav">
+                <li class="header-nav__item">
+                  <a class="header-nav__link" href="./restaurant.html">Ресторан</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__contact" href="tel:+380955559533">
+                    <svg class="header-nav__contact-icon">
+                      <use href="./images/icons.svg#phone"></use>
+                    </svg>
+                    <p class="header-nav__tel">095 555 95 33</p></a
+                  >
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__link" href="./hotel.html">Готель</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__contact" href="tel:+380668491089">
+                    <svg class="header-nav__contact-icon">
+                      <use href="./images/icons.svg#phone"></use>
+                    </svg>
+                    <p class="header-nav__tel header-nav__tel--margin-right">066 849 10 89</p>
+                    <p class="header-nav__tel">067 275 85 40</p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <section class="hero">
+          <div class="container">
+            <h1 class="hero__title">mimiho</h1>
+            <h2 class="hero__sub-title">Ресторанно-готельний комплекс</h2>
+            <p class="hero__text">смак життя 24/7</p>
+            <div class="hero-elements-position">
+              <a
+                class="hero__map-location"
+                href="https://goo.gl/maps/nCRCqF7u8mZtbLEB7"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                ><svg class="hero__map-location-icon">
+                  <use href="./images/icons.svg#map_location"></use>
+                </svg>
+                Україна, м. Полтава,<br />
+                вул. Маршала Бірюзова, 15</a
+              >
+              <button
+                class="reservation-button reservation-button--margin-right"
+                type="button"
+                data-modal-open
+              >
+                Забронювати столик
+              </button>
+              <button class="reservation-button" type="button">Забронювати номер</button>
+            </div>
+            <ul class="soc">
+              <li class="soc__item">
+                <a class="soc__link" href="#" target="_blank" rel="noopener noreferrer nofollow"
+                  ><svg class="soc__icon">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc__item">
+                <a class="soc__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                  <svg class="soc__icon">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc__item">
+                <a class="soc__link" href="#" target="_blank" rel="noopener noreferrer nofollow"
+                  ><svg class="soc__icon">
+                    <use href="./images/icons.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-table">
+        <button data-modal-close type="button">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+
+        <h3 class="modal-table__title">Забронювати столик</h3>
+        <form class="modal-table__form" name="table-form" autocomplete="on">
+          <ul class="modal-table__list">
+            <li>
+              <input
+                type="text"
+                class="modal-table__input"
+                name="username"
+                id="user_name"
+                placeholder="Ваше ім'я"
+                autofocus
+              />
+              <label for="user_name" class="modal-table__label">На кого забронювати столик?</label>
+            </li>
+            <li>
+              <input
+                type="tel"
+                class="modal-table__input"
+                name="phone_number"
+                id="phone_number"
+                placeholder="+38 (___) ___-__-__"
+              />
+              <label for="phone_number" class="modal-table__label">Номер телефону</label>
+            </li>
+            <li>
+              <input
+                type="number"
+                class="modal-table__input"
+                name="number_of_persons"
+                id="number_of_persons"
+                placeholder="2"
+              />
+              <label for="number_of_persons" class="modal-table__label"
+                >Столик на яку кількість осіб?</label
+              >
+            </li>
+            <li>
+              <input
+                type="date"
+                class="modal-table__input"
+                name="booking_date"
+                id="booking_date"
+                placeholder=""
+              />
+              <label for="booking_date" class="modal-table__label">На яку дату бронювати?</label>
+            </li>
+          </ul>
+          <button class="modal-table__button">Оформити бронювання</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
+</html>
