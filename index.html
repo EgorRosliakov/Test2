@@ -11,6 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   </head>
 
   <body>
@@ -117,7 +118,7 @@
               <input
                 type="text"
                 class="modal-table__input"
-                name="username"
+                name="user_name"
                 id="user_name"
                 placeholder="Ваше ім'я"
                 autofocus
@@ -132,6 +133,11 @@
                 id="phone_number"
                 placeholder="+38 (___) ___-__-__"
               />
+              <script>
+                $(function () {
+                  $('#phone_number').mask('+38 (999) 999-99-99');
+                });
+              </script>
               <label for="phone_number" class="modal-table__label">Номер телефону</label>
             </li>
             <li>
@@ -157,7 +163,7 @@
               <label for="booking_date" class="modal-table__label">На яку дату бронювати?</label>
             </li>
           </ul>
-          <button class="modal-table__button">Оформити бронювання</button>
+          <button type="submit" class="modal-table__button">Оформити бронювання</button>
         </form>
       </div>
     </div>
@@ -170,5 +176,8 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
+
+    <script src="jquery.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
   </body>
 </html>

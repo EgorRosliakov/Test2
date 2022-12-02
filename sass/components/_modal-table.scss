@@ -21,7 +21,8 @@
 .modal-table {
   position: absolute;
   display: block;
-  width: 414px;
+  max-width: 414px;
+  width: 100%;
   left: 50%;
   top: 0px;
   padding: 60px 15px;
@@ -30,8 +31,8 @@
   border-radius: 2px;
 
 @media screen and (min-width: 1024px) {
-        width: 712px;
-        height: 522px;
+        min-width: 712px;
+        min-height: 522px;
     }
 }
 
@@ -63,6 +64,7 @@
 
 @media screen and (min-width: 1024px) {
         font-size: 40px;
+        width: 100%;
     }
 }
 
@@ -78,7 +80,8 @@
 }
 
 .modal-table__input {
-  width: 384px;
+  max-width: 384px;
+  width: 100%;
   height: 54px;
   margin-bottom: 8px;
   border: 1px solid #c79002;
@@ -92,7 +95,7 @@
   outline: none;
 
 @media screen and (min-width: 1024px) {
-        width: 288px;
+        max-width: 288px;
         height: 64px;
         font-size: 24px;
         line-height: 1.17;
