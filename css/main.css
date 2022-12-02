@@ -740,23 +740,6 @@ img {
   }
 }
 
-.modal-table__label--select {
-  position: relative;
-}
-
-.modal-table__label--select::after {
-  background-image: url("../images/arrow-down.svg");
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 15px;
-  right: 5px;
-  z-index: 3;
-  background-color: #fff;
-  pointer-events: none;
-}
-
 .modal-table__button {
   display: -webkit-box;
   display: -ms-flexbox;
