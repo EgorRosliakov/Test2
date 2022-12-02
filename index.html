@@ -141,25 +141,42 @@
               <label for="phone_number" class="modal-table__label">Номер телефону</label>
             </li>
             <li class="modal-table__item">
-              <input
+              <!-- <input
                 type="number"
                 class="modal-table__input"
                 name="number_of_persons"
                 id="number_of_persons"
                 placeholder="2"
-              />
+              /> -->
+              <select name="people" class="modal-table__input">
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
               <label for="number_of_persons" class="modal-table__label"
                 >Столик на яку кількість осіб?</label
               >
             </li>
             <li class="modal-table__item">
-              <input
+              <!-- <input
                 type="date"
                 class="modal-table__input"
                 name="booking_date"
                 id="booking_date"
                 placeholder=""
-              />
+              /> -->
+              <select name="date" class="modal-table__input">
+                <option value="06.12" selected>Сьогодні</option>
+                <option value="07.12">Завтра</option>
+                <option value="08.12">08.12</option>
+                <option value="09.12">09.12</option>
+                <option value="10.12">10.12</option>
+                <option value="11.12">11.12</option>
+                <option value="12.12">12.12</option>
+              </select>
               <label for="booking_date" class="modal-table__label">На яку дату бронювати?</label>
             </li>
           </ul>
