@@ -638,10 +638,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #fff;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
   cursor: pointer;
 }
 
@@ -664,14 +664,8 @@ img {
   }
 }
 
-.modal-table__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.modal-table__item:last-child {
+  margin-bottom: 40px;
 }
 
 .modal-table__list {
@@ -683,6 +677,11 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .modal-table__list {
+    display: block;
+  }
 }
 
 .modal-table__input {
