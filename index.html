@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no" />
     <title>Mimino</title>
 
     <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -141,7 +141,7 @@
               <label for="phone_number" class="modal-table__label">Номер телефону</label>
             </li>
             <li class="modal-table__item">
-              <select name="people" class="modal-table__input">
+              <select name="people" class="modal-table__input custom-select">
                 <option value="1">1</option>
                 <option value="2" selected>2</option>
                 <option value="3">3</option>
@@ -155,14 +155,14 @@
               >
             </li>
             <li class="modal-table__item">
-              <select name="date" class="modal-table__input">
-                <option value="06.12" selected>Сьогодні</option>
-                <option value="07.12">Завтра</option>
-                <option value="08.12">08.12</option>
-                <option value="09.12">09.12</option>
-                <option value="10.12">10.12</option>
-                <option value="11.12">11.12</option>
-                <option value="12.12">12.12</option>
+              <select name="date" class="modal-table__input custom-select">
+                <option value="06.12.22" selected>Сьогодні</option>
+                <option value="07.12.22">07.12.22</option>
+                <option value="08.12.22">08.12.22</option>
+                <option value="09.12.22">09.12.22</option>
+                <option value="10.12.22">10.12.22</option>
+                <option value="11.12.22">11.12.22</option>
+                <option value="12.12.22">12.12.22</option>
               </select>
               <label for="booking_date" class="modal-table__label modal-table__label--select"
                 >На яку дату бронювати?</label
@@ -181,9 +181,9 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
-
-    <script src="jquery.js"></script>
     <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./js/select.js"></script>
   </body>
 </html>
